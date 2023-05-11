@@ -1,0 +1,19 @@
+CREATE TABLE SinclairsBookstore (id integer, name text, quantity integer, price integer, condition text, quarter integer);
+INSERT into SinclairsBookstore VALUES (1, "LOTR Box SETS", 10, 45, "new" , 1);
+INSERT into SinclairsBookstore VALUES (2, "Jane Eyre", 25, 15, "new", 1);
+INSERT into SinclairsBookstore VALUES (3, "Stationary Sets", 30, 20, "new", 2);
+INSERT into SinclairsBookstore VALUES (4, "Dorothy Parker Poetry", 4, 7, "used", 2);
+INSERT into SinclairsBookstore VALUES (5, "Fingersmith", 5, 15, "used", 2);
+INSERT into SinclairsBookstore VALUES (6, "Mary Oliver Poetry", 4, 7, "used", 1);
+INSERT into SinclairsBookstore VALUES (7, "The Price of Salt", 3, 10, "new", 2);
+INSERT into SinclairsBookstore VALUES (8, "Annie on My Mind", 2, 7, "used", 1);
+INSERT into SinclairsBookstore VALUES (9, "The Hobbit", 4, 10, "new", 2);
+INSERT into SinclairsBookstore VALUES (10, "Gold Pen Sets", 8, 15, "new", 2);
+INSERT into SinclairsBookstore VALUES (11, "The Second Sex", 5, 17, "new", 2);
+INSERT into SinclairsBookstore VALUES (12, "White Candles", 4, 5, "new", 2);
+INSERT into SinclairsBookstore VALUES (13, "Where the Wild Things Are", 4, 4, "used", 1);
+INSERT into SinclairsBookstore VALUES (14, "Fun Home", 2, 10, "used", 1);
+INSERT into SinclairsBookstore VALUES (15, "The Dalemark Quartet", 2, 12, "used", 2);
+SELECT * FROM SinclairsBookstore ORDER BY price;
+SELECT * FROM SinclairsBookstore WHERE price < 20;
+SELECT SUM(quantity) FROM SinclairsBookstore
